@@ -14,7 +14,7 @@ void Automata::Off() {
     state = States::Off;
 }
 void Automata::coin(int Cash) {
-    cash=Cash;
+    cash = Cash;
     if (state = States::Wait) state = Accept;
 }
 void Automata::etMenu() {
@@ -23,7 +23,7 @@ States Automata::getState() {
     return state;
 }
 void Automata::choice(string Drink) {
-    for( int i=0;i<menu.size();i++)
+    for(int i=0;i < menu.size();i++)
     {
         if (Drink == menu[i])
         {
