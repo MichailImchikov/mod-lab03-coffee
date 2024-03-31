@@ -10,13 +10,13 @@ TEST(AutomataTest, TurnOn)
 {
     Automata automate;
     automate.On();
-    EXPECT_EQ(WAIT, automate.getState());
+    EXPECT_EQ(Wait, automate.getState());
 }
 TEST(AutomataTest, TurnOf) 
 {
     Automata automate;
     automate.Off();
-    EXPECT_EQ(WAIT, automate.getState());
+    EXPECT_EQ(Wait, automate.getState());
 }
 TEST(AutomataTest, Koffi) 
 {
@@ -47,7 +47,7 @@ TEST(AutomataTest, Koffi3)
     automata.check();
     automata.cook();
     automata.finish()
-    EXPECT_EQ(WAIT, automate.getState());
+    EXPECT_EQ(Wait, automate.getState());
 }
 TEST(AutomataTest, Koffi4) 
 {
