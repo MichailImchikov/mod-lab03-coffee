@@ -8,15 +8,15 @@ class AutomataTest : public testing::Test {
 };
 TEST(AutomataTest, TurnOn) 
 {
-    Automata automate;
-    automate.On();
-    EXPECT_EQ(Wait, automate.getState());
+    Automata automata;
+    automata.On();
+    EXPECT_EQ(Wait, automata.getState());
 }
 TEST(AutomataTest, TurnOf) 
 {
-    Automata automate;
-    automate.Off();
-    EXPECT_EQ(Wait, automate.getState());
+    Automata automata;
+    automata.Off();
+    EXPECT_EQ(Wait, automata.getState());
 }
 TEST(AutomataTest, Koffi) 
 {
@@ -67,7 +67,7 @@ TEST(AutomataTest, Koffi4)
     automata.choice("vino");
     automata.check();
     automata.cook();
-     automata.Off();
+    automata.Off();
     EXPECT_EQ(Off,automate.getState());
 }
 TEST(AutomataTest, Koffi5) 
