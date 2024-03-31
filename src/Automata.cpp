@@ -32,7 +32,7 @@ void Automata::choice(string Drink) {
     }
 }
 void Automata::check() {
-    if (prices[index] <= cash && state == States::Check) { 
+    if (prices[index] <= cash && state == States::Check) {
         state = States::Cook;}
 }
 float Automata::cook() {
