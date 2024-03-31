@@ -26,7 +26,7 @@ TEST(AutomataTest, Koffi) {
     EXPECT_EQ(Cook, automata.getState());
 }
 TEST(AutomataTest, Koffi2) {
-    Automata automata=Automata();
+    Automata automata = Automata();
     automata.On();
     automata.coin(20);
     automata.choice("vino");
@@ -35,7 +35,7 @@ TEST(AutomataTest, Koffi2) {
     EXPECT_EQ(0,automata.cook());
 }
 TEST(AutomataTest, Koffi3) {
-    Automata automata=Automata();
+    Automata automata = Automata();
     automata.On();
     automata.coin(20);
     automata.choice("vino");
@@ -45,7 +45,7 @@ TEST(AutomataTest, Koffi3) {
     EXPECT_EQ(Wait, automata.getState());
 }
 TEST(AutomataTest, Koffi9) {
-    Automata automata=Automata();
+    Automata automata = Automata();
     automata.On();
     automata.coin(30);
     automata.choice("vino");
@@ -54,7 +54,7 @@ TEST(AutomataTest, Koffi9) {
     EXPECT_EQ(10,automata.cook());
 }
 TEST(AutomataTest, Koffi4) {
-    Automata automata=Automata();
+    Automata automata = Automata();
     automata.On();
     automata.coin(30);
     automata.choice("vino");
@@ -64,7 +64,7 @@ TEST(AutomataTest, Koffi4) {
     EXPECT_EQ(Off,automata.getState());
 }
 TEST(AutomataTest, Koffi5) {
-    Automata automata=Automata();
+    Automata automata = Automata();
     automata.On();
     automata.Off();
     automata.coin(30);
@@ -74,14 +74,14 @@ TEST(AutomataTest, Koffi5) {
     EXPECT_EQ(Cook,automata.getState());
 }
 TEST(AutomataTest, Koffi6) {
-    Automata automata=Automata();
+    Automata automata = Automata();
     automata.On();
     automata.coin(20);
     automata.choice("vino");
     EXPECT_EQ(Check, automata.getState());
 }
 TEST(AutomataTest, Koffi7) {
-    Automata automata=Automata();
+    Automata automata = Automata();
     automata.On();
     automata.coin(20);
     automata.choice("vino");
