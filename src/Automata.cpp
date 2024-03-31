@@ -1,9 +1,9 @@
-// Copyright 2024 Micha 
+// Copyright 2024 Micha
 #include "Automata.h"
 #include <iostream>
 #include <map>
 #include <vector>
-using namespace std;
+//using namespace std;
 Automata::Automata() {
     cash = 0;
     state = States::Off;
