@@ -16,7 +16,7 @@ TEST(AutomataTest, TurnOf)
 {
     Automata automata;
     automata.Off();
-    EXPECT_EQ(Wait, automata.getState());
+    EXPECT_EQ(Off, automata.getState());
 }
 TEST(AutomataTest, Koffi) 
 {
