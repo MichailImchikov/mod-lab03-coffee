@@ -1,4 +1,4 @@
-// Copyright 2024 Micha 
+// Copyright 2024 Micha
 #include <iostream>
 #include "Automata.h"
 int main() {
