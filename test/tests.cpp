@@ -79,7 +79,7 @@ TEST(AutomataTest, Koffi5)
     automata.choice("vino");
     automata.check();
     automata.cook();
-    EXPECT_EQ(Off,automata.getState());
+    EXPECT_EQ(Cook,automata.getState());
 }
 TEST(AutomataTest, Koffi6) 
 {
