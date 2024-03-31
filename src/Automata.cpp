@@ -47,7 +47,7 @@ float Automata::cook()
 {   
     if(state == States::Cook) 
     {
-            return prices[index] - cash;
+            return cash-prices[index];
     }
     return 0;
 }
