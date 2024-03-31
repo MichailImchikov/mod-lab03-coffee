@@ -45,7 +45,10 @@ void Automata::check()
 }
 float Automata::cook()
 {   
-    if(state == States::Cook) return prices[index] - cash;
+    if(state == States::Cook) 
+    {
+            return prices[index] - cash;
+    }
 }
 string Automata::finish()
 {
