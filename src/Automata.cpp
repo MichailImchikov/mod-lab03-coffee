@@ -1,7 +1,8 @@
 #include "Automata.h" 
 #include <iostream>
 #include <map>
-#include <vector>using namespace std;
+#include <vector>
+using namespace std;
 Automata::Automata()
 {
     cash = 0;
@@ -20,10 +21,8 @@ void Automata::coin(int Cash)
     cash=Cash;
     if (state = States::Wait) state = Accept;
 }
-void Automata::etMenu(vector<string> Menu,vector<float> Prices)
+void Automata::etMenu()
 {
-    Menu = menu;
-    Prices = prices;
 }
 States Automata::getState()
 {
