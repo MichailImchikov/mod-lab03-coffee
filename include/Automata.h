@@ -19,8 +19,8 @@ float cook();
 string finish();
  private:
 float cash;
-vector<string> menu{"sok","vino","kofe"};
-vector<float> prices{15,20,45};
+vector<string> menu{"sok", "vino", "kofe"};
+vector<float> prices{15, 20 ,45};
 States state;
 int index;
 };
