@@ -3,33 +3,26 @@
 #include <map>
 #include <vector>
 using namespace std;
-Automata::Automata()
-{
+Automata::Automata() {
     cash = 0;
     state = States::Off;
 };
-void Automata::On()
-{
+void Automata::On() {
     if (state == States::Off) state = States::Wait;
 }
-void Automata::Off()
-{
+void Automata::Off() {
     state = States::Off;
 }
-void Automata::coin(int Cash)
-{
+void Automata::coin(int Cash) {
     cash=Cash;
     if (state = States::Wait) state = Accept;
 }
-void Automata::etMenu()
-{
+void Automata::etMenu() {
 }
-States Automata::getState()
-{
+States Automata::getState() {
     return state;
 }
-void Automata::choice(string Drink)
-{
+void Automata::choice(string Drink) {
     for( int i=0;i<menu.size();i++)
     {
         if (Drink == menu[i])
@@ -39,20 +32,17 @@ void Automata::choice(string Drink)
         }
     }
 }
-void Automata::check()
-{
+void Automata::check() {
     if (prices[index] <= cash && state == States::Check) { state = States::Cook;}
 }
-float Automata::cook()
-{
+float Automata::cook() {
     if(state == States::Cook)
     {
             return cash-prices[index];
     }
     return 0;
 }
-string Automata::finish()
-{
+string Automata::finish() {
     state = States::Wait;
     return menu[index];
 }
