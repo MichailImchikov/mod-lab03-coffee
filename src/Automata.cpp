@@ -23,7 +23,7 @@ States Automata::getState() {
     return state;
 }
 void Automata::choice(string Drink) {
-    for(int  i= 0; i < menu.size(); i++) {
+    for (int  i= 0; i < menu.size(); i++) {
         if (Drink == menu[i]) {
             if (state == States::Accept) { state = States::Check;}
             index = i;
@@ -35,7 +35,7 @@ void Automata::check() {
         state = States::Cook;}
 }
 float Automata::cook() {
-    if(state == States::Cook) {
+    if (state == States::Cook) {
             return cash-prices[index];
     }
     return 0;
