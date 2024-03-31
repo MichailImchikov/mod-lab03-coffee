@@ -49,7 +49,7 @@ TEST(AutomataTest, Koffi3)
     automata.finish();
     EXPECT_EQ(Wait, automata.getState());
 }
-TEST(AutomataTest, Koffi4) 
+TEST(AutomataTest, Koffi9) 
 {
     Automata automata=Automata();
     automata.On();
