@@ -49,6 +49,7 @@ float Automata::cook()
     {
             return prices[index] - cash;
     }
+    return 0;
 }
 string Automata::finish()
 {
