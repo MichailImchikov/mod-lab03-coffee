@@ -4,9 +4,8 @@
 #include <vector>
 #include <iostream>
 using namespace std;
-enum States{ Off, Wait, Accept, Check, Cook, Extradition };
-class Automata
-{
+enum States{Off, Wait, Accept, Check, Cook, Extradition};
+class Automata{
  public:
 Automata();
 void On();
