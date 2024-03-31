@@ -1,4 +1,4 @@
-#include "Automata.h" 
+#include "Automata.h"
 #include <iostream>
 #include <map>
 #include <vector>
@@ -34,18 +34,18 @@ void Automata::choice(string Drink)
     {
         if (Drink == menu[i])
         {
-            if (state == States::Accept) { state = States::Check; }
+            if (state == States::Accept) { state = States::Check;}
             index = i;
         }
     }
 }
 void Automata::check()
 {
-    if (prices[index] <= cash && state == States::Check) { state = States::Cook; }
+    if (prices[index] <= cash && state == States::Check) { state = States::Cook;}
 }
 float Automata::cook()
-{   
-    if(state == States::Cook) 
+{
+    if(state == States::Cook)
     {
             return cash-prices[index];
     }
