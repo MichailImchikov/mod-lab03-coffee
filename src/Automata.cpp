@@ -1,3 +1,4 @@
+// Copyright 2024 Micha 
 #include "Automata.h"
 #include <iostream>
 #include <map>
