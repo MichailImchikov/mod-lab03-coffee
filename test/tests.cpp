@@ -32,7 +32,7 @@ TEST(AutomataTest, Koffi2) {
     automata.choice("vino");
     automata.check();
     automata.cook();
-    EXPECT_EQ(0,automata.cook());
+    EXPECT_EQ(0, automata.cook());
 }
 TEST(AutomataTest, Koffi3) {
     Automata automata = Automata();
@@ -51,7 +51,7 @@ TEST(AutomataTest, Koffi9) {
     automata.choice("vino");
     automata.check();
     automata.cook();
-    EXPECT_EQ(10,automata.cook());
+    EXPECT_EQ(10, automata.cook());
 }
 TEST(AutomataTest, Koffi4) {
     Automata automata = Automata();
@@ -61,7 +61,7 @@ TEST(AutomataTest, Koffi4) {
     automata.check();
     automata.cook();
     automata.Off();
-    EXPECT_EQ(Off,automata.getState());
+    EXPECT_EQ(Off, automata.getState());
 }
 TEST(AutomataTest, Koffi5) {
     Automata automata = Automata();
@@ -71,7 +71,7 @@ TEST(AutomataTest, Koffi5) {
     automata.choice("vino");
     automata.check();
     automata.cook();
-    EXPECT_EQ(Cook,automata.getState());
+    EXPECT_EQ(Cook, automata.getState());
 }
 TEST(AutomataTest, Koffi6) {
     Automata automata = Automata();
