@@ -23,7 +23,7 @@ void Automata::etMenu() {
 States Automata::getState() {
     return state;
 }
-void Automata::choice(string Drink) {
+void Automata::choice(std::string Drink) {
     for (int  i= 0; i < menu.size(); i++) {
         if (Drink == menu[i]) {
             if (state == States::Accept) { state = States::Check;}
@@ -41,7 +41,7 @@ float Automata::cook() {
     }
     return 0;
 }
-string Automata::finish() {
+std::string Automata::finish() {
     state = States::Wait;
     return menu[index];
 }
