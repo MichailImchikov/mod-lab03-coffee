@@ -6,7 +6,7 @@ using namespace std;
 Automata::Automata() {
     cash = 0;
     state = States::Off;
-};
+}
 void Automata::On() {
     if (state == States::Off) state = States::Wait;
 }
@@ -23,7 +23,7 @@ States Automata::getState() {
     return state;
 }
 void Automata::choice(string Drink) {
-    for(int i=0;i < menu.size();i++) {
+    for(int  i= 0; i < menu.size(); i++) {
         if (Drink == menu[i]) {
             if (state == States::Accept) { state = States::Check;}
             index = i;
