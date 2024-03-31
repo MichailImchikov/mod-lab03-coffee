@@ -17,7 +17,7 @@ TEST(AutomataTest, TurnOf) {
     EXPECT_EQ(Off, automata.getState());
 }
 TEST(AutomataTest, Koffi) {
-    Automata automata=Automata();
+    Automata automata = Automata();
     automata.On();
     automata.coin(20);
     automata.choice("vino");
