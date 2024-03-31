@@ -1,6 +1,5 @@
-#include 
-#include
-#include 
+#include <vector>
+#include <iostream>
 using namespace std; 
 enum States { Off, Wait, Accept, Check, Cook, Extradition }; 
 class Automata 
@@ -17,8 +16,9 @@ void check();
 float cook(); 
 string finish(); 
 private :
-float cash; 
-vector menu{"sok","vino","kofe"}; 
-vector prices{15,20,45}; 
-States state; int index; 
+float cash;
+vector<string> menu{"sok","vino","kofe"};
+vector<float> prices{15,20,45};
+States state;
+int index;
 };
