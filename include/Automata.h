@@ -14,7 +14,7 @@ void Off();
 void coin(int);
 void etMenu();
 States getState();
-void choice(string);
+void choice(std::string);
 void check();
 float cook();
 std::string finish();
