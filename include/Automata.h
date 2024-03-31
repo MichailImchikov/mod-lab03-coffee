@@ -17,11 +17,11 @@ States getState();
 void choice(string);
 void check();
 float cook();
-string finish();
+std::string finish();
  private:
 float cash;
-vector<string> menu{"sok", "vino", "kofe"};
-vector<float> prices{15, 20 , 45};
+std::vector<std::string> menu{"sok", "vino", "kofe"};
+std::vector<float> prices{15, 20 , 45};
 States state;
 int index;
 };
